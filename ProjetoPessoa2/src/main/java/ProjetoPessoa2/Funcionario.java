@@ -10,9 +10,17 @@ package ProjetoPessoa2;
  * @author Geovani-PC
  */
 public class Funcionario extends Pessoa{
-    
-    
-    public void receberAum(){
-        
+    private float salario;
+
+    public float getSalario() {
+        return salario;
+    }
+
+    public void setSalario(float salario) {
+        this.salario = salario;
+    }
+       
+    public void receberAum(float aum){
+        this.salario += aum;
     }
 }

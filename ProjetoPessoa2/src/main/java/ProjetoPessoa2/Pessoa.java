@@ -9,16 +9,17 @@ package ProjetoPessoa2;
  *
  * @author Geovani-PC
  */
-abstract class Pessoa {
-    private String nome;
-    private int idade;
-    private String sexo;
-
+public abstract class Pessoa {
+    protected String nome;
+    protected int idade;
+    protected String sexo;
+    
+    //construtor
     public final void fazerAniv() {
         this.idade ++;
     }
     
-    
+    //getters e Setters 
     public String getNome() {
         return nome;
     }
@@ -43,6 +44,12 @@ abstract class Pessoa {
         this.sexo = sexo;
     }
     
+    // toString
+
+    @Override
+    public String toString() {
+        return "Dados: " + "nome=" + nome + ", idade=" + idade + ", sexo=" + sexo;
+    }
     
     
 }
